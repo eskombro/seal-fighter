@@ -10,15 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_15_122429) do
-
-  create_table "seals", force: :cascade do |t|
-    t.string "name", null: false
-    t.integer "hp", null: false
-    t.integer "attack", null: false
-    t.integer "defense", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+ActiveRecord::Schema.define(version: 20_220_615_122_429) do
+  create_table 'seals', force: :cascade do |t|
+    t.string 'name', null: false
+    t.integer 'hp', null: false
+    t.integer 'attack', null: false
+    t.integer 'defense', null: false
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
-
 end
