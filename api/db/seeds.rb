@@ -4,6 +4,8 @@ if Rails.env.production? && ENV.fetch('ACCEPT_SEED', nil) != 'true'
   raise '---> You are in production environment! Won\'t modify DB, bye :) <---'
 end
 
+Seal.destroy_all
+
 seals = [
   { name: 'seal_1', hp: 1000, attack: 40, defense: 10 },
   { name: 'seal_2', hp: 1000, attack: 30, defense: 20 },
