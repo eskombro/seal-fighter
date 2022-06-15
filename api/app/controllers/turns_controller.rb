@@ -4,7 +4,8 @@ class TurnsController < ApplicationController
   # POST /seals
   def action
     dammage_seal2 = Seal.find(@turn[:seal1]).attack - Seal.find(@turn[:seal2]).defense
-    render json: { results: {seal1: { id: turn_params['seal1'], action: nil }, seal2: { id: turn_params['seal1'], action: 'hp', value: dammage_seal2 }}}
+    render json: { results: { seal1: { id: turn_params['seal1'], action: nil },
+                              seal2: { id: turn_params['seal1'], action: 'hp', value: dammage_seal2 } } }
   end
 
   private
