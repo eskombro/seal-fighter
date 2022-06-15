@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+  extends: [
+    'airbnb',
+    'plugin:react/recommended',
+    'plugin:cypress/recommended',
+    'prettier',
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -11,7 +16,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'prettier', 'cypress'],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
