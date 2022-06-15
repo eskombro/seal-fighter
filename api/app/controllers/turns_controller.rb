@@ -1,19 +1,12 @@
 class TurnsController < ApplicationController
-  before_action :set_turn
-
   # POST /seals
   def action
-    dammage_opponent = Seal.find(@turn[:player]).attack - Seal.find(@turn[:opponent]).defense
+    opponent_action = Seal.find(turn_params[:opponent]).receive_attack(Seal.find(turn_params[:player]).attack)
     render json: { results: { player: { id: turn_params['player'], action: nil },
-                              opponent: { id: turn_params['opponent'], action: 'hp', value: dammage_opponent } } }
+                              opponent: { id: turn_params['opponent'], action: opponent_action } } }
   end
 
   private
-
-  # Use callbacks to share common setup or constraints between actions.
-  def set_turn
-    @turn = turn_params
-  end
 
   # Only allow a list of trusted parameters through.
   def turn_params
