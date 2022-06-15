@@ -1,3 +1,12 @@
-const App = () => <div className="text-9xl text-amber-400">Seal Fighter V</div>
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+
+const Router = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+  </Routes>
+)
+
+const App = () => <Router />
 
 export default App
