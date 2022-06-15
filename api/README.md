@@ -6,8 +6,8 @@ This directory contains the source code of a basic [Ruby on Rails](https://rubyo
 
 ### Install Ruby and Ruby on Rails
 
-Make sure you have installed on your environment [Ruby](https://www.ruby-lang.org/en/).
-We advise you to use a Version manager as [RVM](https://github.com/rvm/rvm)
+Make sure you have installed on your environment [Ruby](https://www.ruby-lang.org/en/).  
+We advise you to use a Version manager as [RVM](https://github.com/rvm/rvm)  
 The ruby version this project uses is specified in the [.ruby_version](.ruby_version) file.
 
 ### Set up the project
