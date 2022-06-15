@@ -1,0 +1,63 @@
+name: Front-end tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+defaults:
+  run:
+    working-directory: front
+
+jobs:
+  linter-front:
+    name: linter-front
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup node and cache
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+          cache-dependency-path: front/yarn.lock
+      - name: Install dependencies
+        run: yarn
+      - name: Run eslint check
+        run: yarn lint
+
+  tests-front:
+    name: tests-front
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup node and cache
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+          cache-dependency-path: front/yarn.lock
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0.1'
+          bundler-cache: true
+          working-directory: api
+      - name: Run api
+        run: |
+          bundle exec rails db:setup
+          bundle exec rails s &
+        working-directory: api
+      - name: Browser tests
+        uses: cypress-io/github-action@v4
+        with:
+          build: yarn build
+          start: yarn start
+          wait-on: 'http://localhost:3000'
+          wait-on-timeout: 120
+          browser: chrome
+          config-file: cypress.config.js
+          working-directory: front
