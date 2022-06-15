@@ -3,9 +3,9 @@ class TurnsController < ApplicationController
 
   # POST /seals
   def action
-    dammage_seal2 = Seal.find(@turn[:seal1]).attack - Seal.find(@turn[:seal2]).defense
-    render json: { results: { seal1: { id: turn_params['seal1'], action: nil },
-                              seal2: { id: turn_params['seal1'], action: 'hp', value: dammage_seal2 } } }
+    dammage_opponent = Seal.find(@turn[:player]).attack - Seal.find(@turn[:opponent]).defense
+    render json: { results: { player: { id: turn_params['player'], action: nil },
+                              opponent: { id: turn_params['opponent'], action: 'hp', value: dammage_opponent } } }
   end
 
   private
@@ -17,7 +17,7 @@ class TurnsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def turn_params
-    params.require([:seal1, :seal2])
-    params.permit([:seal1, :seal2])
+    params.require([:player, :opponent, :action])
+    params.permit([:player, :opponent, :action])
   end
 end
