@@ -1,0 +1,49 @@
+name: Tests api
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+defaults:
+  run:
+    working-directory: api
+
+jobs:
+  linter-api:
+    name: linter-api
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.0.1"
+          bundler: "Gemfile.lock"
+          bundler-cache: true
+          working-directory: api
+      - name: Run linter
+        run: bundle exec rubocop
+
+  tests-api:
+    name: tests-api
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.0.1"
+          bundler-cache: true
+          working-directory: api
+      - name: Test with RSpec
+        env:
+          RAILS_ENV: "test"
+        run: |
+          bundle exec rails db:create
+          bundle exec rails db:migrate
+          bundle exec rspec

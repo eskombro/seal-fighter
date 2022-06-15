@@ -5,7 +5,7 @@ ruby '3.0.1'
 
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 6.1.6'
-gem 'rubocop', require: false
+gem 'rubocop'
 gem 'rubocop-rails', require: false
 gem 'sqlite3', '~> 1.4'
 

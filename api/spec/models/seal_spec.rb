@@ -6,7 +6,9 @@ RSpec.describe Seal, type: :model do
                                      name: 'seal_1',
                                      hp: 1000,
                                      attack: 40,
-                                     defense: 10
+                                     defense: 10,
+                                     img_url: 'seal_1.png',
+                                     description: 'Some description'
                                    })
     @seal.save!
   end
