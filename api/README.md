@@ -1,24 +1,25 @@
-# README
+# Seal Fighter API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Set your environment
 
-Things you may want to cover:
+```bash
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* Ruby version
+# Run the API
 
-* System dependencies
+```bash
+rails s -p 8888
+```
 
-* Configuration
+# Run the linter
 
-* Database creation
+```bash
+# Without autocorrect
+bundle exec rubocop
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# With autocorrect
+bundle exec rubocop -a
+```

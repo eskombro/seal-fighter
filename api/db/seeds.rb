@@ -1,7 +1,25 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Rails.logger.info("Seed the DB on environment: #{Rails.env}")
+Rails.logger.info('___________________________')
+if Rails.env.production? && ENV.fetch('ACCEPT_SEED', nil) != 'true'
+  raise '---> You are in production environment! Won\'t modify DB, bye :) <---'
+end
+
+Seal.destroy_all
+
+seals = [
+  { name: 'seal_1', hp: 1000, attack: 40, defense: 10, img_url: 'seal_1.png',
+    description: 'An amazing description for Seal No. 1' },
+  { name: 'seal_2', hp: 1000, attack: 30, defense: 20, img_url: 'seal_2.png',
+    description: 'An amazing description for Seal No. 2' },
+  { name: 'seal_3', hp: 1000, attack: 20, defense: 30, img_url: 'seal_3.png',
+    description: 'An amazing description for Seal No. 3' },
+  { name: 'seal_4', hp: 1000, attack: 10, defense: 40, img_url: 'seal_4.png',
+    description: 'An amazing description for Seal No. 4' }
+]
+
+Rails.logger.info('--- Creating seals:')
+
+seals.each do |seal|
+  Rails.logger.info("Creating seal: #{seal['name']}")
+  Seal.create(seal)
+end
