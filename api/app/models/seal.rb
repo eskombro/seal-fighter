@@ -1,0 +1,2 @@
+class Seal < ApplicationRecord
+end
