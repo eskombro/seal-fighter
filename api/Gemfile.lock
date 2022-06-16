@@ -92,11 +92,14 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
+    oj (3.13.14)
     parallel (1.22.1)
     parser (3.1.2.0)
       ast (~> 2.4.1)
     puma (5.6.4)
       nio4r (~> 2.0)
+    rabl (0.15.0)
+      activesupport (>= 2.3.14)
     racc (1.6.0)
     rack (2.2.3.1)
     rack-test (1.1.0)
@@ -192,7 +195,9 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   listen (~> 3.3)
+  oj
   puma (~> 5.0)
+  rabl
   rails (~> 6.1.6)
   rspec-rails (~> 5.1.2)
   rubocop

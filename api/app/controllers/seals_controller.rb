@@ -4,8 +4,7 @@ class SealsController < ApplicationController
   # GET /seals
   def index
     @seals = Seal.all
-
-    render json: @seals
+    render json: JSON.parse(Rabl.render(@seals, 'seals/index', view_path: 'app/views', format: :json))
   end
 
   # GET /seals/1
