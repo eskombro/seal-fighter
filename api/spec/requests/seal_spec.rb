@@ -29,7 +29,6 @@ RSpec.describe 'Projects', type: :request do
       get '/seals'
       expect(response).to be_successful
       body = JSON.parse(response.body)
-      puts(body.first)
       expect(body.length).to eq(2)
       expect(body.first['id']).to be_a(Integer)
       expect(body.first['name']).to be_a(String)
