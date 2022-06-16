@@ -1,5 +1,5 @@
 class SealsController < ApplicationController
-  before_action :set_seal, only: [:show, :update, :destroy]
+  before_action :set_seal, only: [:update, :destroy]
 
   # GET /seals
   def index
@@ -7,7 +7,7 @@ class SealsController < ApplicationController
     render json: JSON.parse(Rabl.render(@seals, 'seals/index', view_path: 'app/views', format: :json))
   end
 
-    # POST /seals
+  # POST /seals
   def create
     @seal = Seal.new(seal_params)
 
