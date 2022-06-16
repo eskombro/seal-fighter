@@ -15,7 +15,7 @@ Whatever the situation is, we are going to present you with an exercise where yo
 
 We love seals, that's something that you need to know for this exercise. We struggled to decide which seal is our favorite. After several discussions, we decided to create a video game to decide which one is the best; The game is called `Seal Fighter V`.
 
-Seals will fight each other in 1vs1 in order to gain glory, respect and maybe finish on top of the leaderboard :rocket:
+Seals will fight each other in 1 vs 1 in order to gain glory, respect and maybe finish on top of the leaderboard :rocket:
 
 ## The game 🎮
 
@@ -31,7 +31,7 @@ You will take part of the development of the first stages of the game. We just w
 
 ### You should know ✍️
 
-- **We do not excpect you to spend an ubelievable amount of hours** working on this project for the technical test. If you love it we can develop the whole game later, but for now, making some choices, doing some modifications and making sure you understand the codebase and are capable of contributing will be more than enough for us to have a technical chat afterward. **Please DO NOT sacrifice a huge amount of your lovely free time**, just take this as a technical exercise you can work on it for a few hours (2 or 3 hours should be enough, and if it is not, please let us know to adapt everything).
+- **We do not expect you to spend an ubelievable amount of hours** working on this project for the technical test. If you love it we can develop the whole game later, but for now, making some choices, doing some modifications and making sure you understand the codebase and are capable of contributing will be more than enough for us to have a technical chat afterward. **Please DO NOT sacrifice a huge amount of your lovely free time**, just take this as a technical exercise you can work on it for a few hours (2 or 3 hours should be enough, and if it is not, please let us know to adapt everything).
 
 - We expect you to be able to do some **work in the front-end AS WELL AS in the back-end**, even if you end up working more in one than the other one, it is important to us to know that any developer in our team is capable of understanding and interacting with the whole environment, even when it is not your field of expertise.
 
@@ -45,9 +45,7 @@ You will take part of the development of the first stages of the game. We just w
 
 ## Now let's talk about missions
 
-This is the very early stage of this game development! Someone took some decisions about the architecture of the project but that's it.
-
-You goal will be to develop an interface to present all the characters of the game. Those little seals are eager to show off their little faces.
+This is the very early stage of this game development! Someone took some decisions about the architecture of the project but that's it. Your goal will be to develop an interface to present all the characters of the game. Those little seals are eager to show off their little faces.
 
 What's provided:
 - A basic design that shows what we would like the start of the game to look like. You can find this design in Figma, [click on this link](https://www.figma.com/file/1F1hraYvSAN7vzhd4e5iMU/Seal-Fighter-V?node-id=0%3A1) and check it out.
@@ -58,8 +56,10 @@ What's provided:
 
 What you need to do:
 - Create the page `Home` following the design
-- Create the page `Info` following the design and using an API route in the form of `GET http://localhost:8888/seals/name_of_the_seal`. Each info page should be accessible from the front-end with the URL `http://localhost:3000/seals/name_of_the_seal`
-- [OPTIONNAL] Create the character selection system
+- Create the page `Info` following the design and using an API route in the form of `GET http://localhost:8888/seals/name_of_the_seal`. The `Info` page should be accessible from the front-end using the URL scheme `http://localhost:3000/seals/name_of_the_seal`
+- [OPTIONAL] Create the character selection system
+
+You can contact @eskombro or @nicolasvienot if you need anything
 
 ## Images 📷
 
@@ -68,7 +68,7 @@ What you need to do:
 </p>
 
 <p align="center">
-  <img src="/assetsHome - Player hover.png" alt="Home hover" />
+  <img src="/assets/Home - Player hover.png" alt="Home hover" />
 </p>
 
 <p align="center">
@@ -78,3 +78,5 @@ What you need to do:
 <p align="center">
   <img src="/assets/Home - Player selected [OPTIONAL].png" alt="Home selected" />
 </p>
+
+Thanks to @lpinot for the design :seal:
