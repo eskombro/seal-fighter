@@ -20,8 +20,8 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.0.1"
-          bundler: "Gemfile.lock"
+          ruby-version: '3.0.1'
+          bundler: 'Gemfile.lock'
           bundler-cache: true
           working-directory: api
       - name: Run linter
@@ -37,12 +37,12 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.0.1"
+          ruby-version: '3.0.1'
           bundler-cache: true
           working-directory: api
       - name: Test with RSpec
         env:
-          RAILS_ENV: "test"
+          RAILS_ENV: 'test'
         run: |
           bundle exec rails db:create
           bundle exec rails db:migrate
