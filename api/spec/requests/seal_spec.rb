@@ -33,6 +33,9 @@ RSpec.describe 'Projects', type: :request do
       expect(body.first['id']).to be_a(Integer)
       expect(body.first['name']).to be_a(String)
       expect(body.first['img_url']).to be_a(String)
+      expect(body.first['attack']).to be nil
+      expect(body.first['defense']).to be nil
+      expect(body.first['description']).to be nil
     end
   end
 

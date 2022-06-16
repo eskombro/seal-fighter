@@ -3,7 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.1'
 
+gem 'oj'
 gem 'puma', '~> 5.0'
+gem 'rabl'
 gem 'rails', '~> 6.1.6'
 gem 'rubocop'
 gem 'rubocop-rails', require: false
