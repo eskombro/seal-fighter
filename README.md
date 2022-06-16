@@ -43,3 +43,5 @@ You will take part of the development of the first stages of the game. We just w
 ## Now let's talk about missions
 
 We have a basic design that shows what we would like our Game to look like in the near future. You can find this design in Figma, [click on this link](https://www.figma.com/file/1F1hraYvSAN7vzhd4e5iMU/Seal-Fighter-V?node-id=0%3A1) and check it out.
+
+![Seal fighter V](/front/public/home-small.png)
