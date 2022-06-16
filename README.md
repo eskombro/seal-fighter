@@ -1,20 +1,23 @@
-![Seal fighter V](/front/public/logo-design.png)
+<p align="center">
+  <img src="assets/Logo.svg" alt="Meilisearch" />
+</p>
 
-# 🦭🦭🦭 Seal Fighter V 🦭🦭🦭
+# Seal Fighter V
 
 ## Full-stack developer technical test 👨‍💻
 
-Welcome to our full-stack developer technical test repository. If you are here, either you are going through a recruitment phase to work with us, you are just curious, or you have nothing better to do!
+Welcome to our full-stack developer technical test repository.
+If you are here, either you are going through a recruitment phase to work with us, you are just curious, or you have nothing better to do!
 
 Whatever the situation is, we are going to present you with an exercise where you are expected to do some code. But of course, not everything is about code, there is choices, styles, ideas... hopefully it will be fun! 🥳
 
-## General Overview 🦭🦭🦭
+## General overview 🦭
 
 We love seals, that's something that you need to know for this exercise. We struggle to decide which seal is our favorite. After several discussions, we decided to let themselves choose which one is the best; for this, we started creating a video game: `Seal Fighter V`.
 
 Seals will figth each other and the last seal standing will be the winner.
 
-## The Game
+## The game 🎮
 
 In the current repository you will find the first little bricks of this game. Of course, the technical stack matters: the winner seal has to win in a terrain where we want them to play. So this game will be created in the following environment:
 
@@ -22,7 +25,7 @@ In the current repository you will find the first little bricks of this game. Of
 - A [React](https://reactjs.org/) App, that will handle the front-end, and organize the arena itself.
 - A quite simple Relational Database ([SQLite](https://www.sqlite.org)) to make things easier for everyone.
 
-## The challenge
+## The challenge 🚀
 
 You will take part of the development of the first stages of the game. We just want you to add some few bricks to this amazing project, and get in contact with some seal (and some Ruby, and some JS).
 
