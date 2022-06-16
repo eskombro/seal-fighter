@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/Logo.svg" width="400" alt="Meilisearch" />
+  <img src="/assets/Logo.svg" width="400" alt="Meilisearch" />
 </p>
 
 # Seal Fighter V
