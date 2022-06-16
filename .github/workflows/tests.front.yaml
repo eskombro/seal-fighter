@@ -40,6 +40,17 @@ jobs:
           node-version: 16
           cache: 'yarn'
           cache-dependency-path: front/yarn.lock
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0.1'
+          bundler-cache: true
+          working-directory: api
+      - name: Run api
+        run: |
+          bundle exec rails db:setup
+          bundle exec rails s &
+        working-directory: api
       - name: Browser tests
         uses: cypress-io/github-action@v4
         with:
