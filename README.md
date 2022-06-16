@@ -36,9 +36,9 @@ You will take part of the development of the first stages of the game. We just w
 
 ## First steps
 
-- Set up the back-end environment and get the API running by [reading this guides]('/api').
+- Set up the back-end environment and get the API running by [reading this guides](api/README.md).
 
-- Set up the front-end environment and get the Home page running by [reading this guides]('/front').
+- Set up the front-end environment and get the Home page running by [reading this guides](front/README.md).
 
 ## Now let's talk about missions
 

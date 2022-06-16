@@ -1,4 +1,8 @@
-# Seal Fighter Front-end
+![Seal fighter V](/front/public/logo-design.png)
+
+# 🦭🦭🦭 Seal Fighter V 🦭🦭🦭
+
+# Front-end
 
 This directory contains the source code of a basic [React](https://reactjs.org/) application designed for this technical test.
 

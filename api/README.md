@@ -1,4 +1,8 @@
-# Seal Fighter API
+![Seal fighter V](/front/public/logo-design.png)
+
+# 🦭🦭🦭 Seal Fighter V 🦭🦭🦭
+
+# API (back-end)
 
 This directory contains the source code of a basic [Ruby on Rails](https://rubyonrails.org/) application, designed as an HTTP API for this technical test.
 
