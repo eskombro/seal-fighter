@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Seal Fighter Front-end
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This directory contains the source code of a basic [React](https://reactjs.org/) application designed for this technical test.
 
-## Available Scripts
+## Set up your environment
 
-In the project directory, you can run:
+### Install Node and npm
 
-### `npm start`
+Make sure you have [Node](https://nodejs.org/en/) and npm or yarn installed on your environment.
+We advise you to use a Version manager as [nvm](https://github.com/nvm-sh/nvm) and use Node >= 16.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Set up the project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install the dependencies by running the following command on the `/front` directory:
 
-### `npm test`
+```bash
+yarn install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Run the Front-end
 
-### `npm run build`
+You can now run the front-end application (it will default to the port `3000`)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Development
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We have created a simple CI that run tests and runs a linter to check the code quality and functionality.
 
-### `npm run eject`
+## Run the linter
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Without autocorrect
+yarn lint
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# With autocorrect
+yarn lint:fix
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Run the tests
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Cypress run
+yarn test
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+# Cypress open
+yarn test:watch
+```
