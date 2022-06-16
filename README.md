@@ -1,3 +1,5 @@
+![Seal fighter V](/front/public/logo-design.png)
+
 # 🦭🦭🦭 Seal Fighter V 🦭🦭🦭
 
 ## Full-stack developer technical test 👨‍💻
