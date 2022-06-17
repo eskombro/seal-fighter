@@ -54,9 +54,9 @@ What's provided:
 - A basic CI including tests and linter for the api and the front-end.
 
 What you need to do:
-- Create the `Home` page following the design.
-- Create a route in the API `GET /seals/name_of_seals` to retrieve the information of a single seal
-- Create the `Info` page using the previously create route. The `Info` page should be accessible from the front-end using the URL scheme `http://localhost:3000/seals/name_of_the_seal`.
+- Create the `Home` page in the front-end following the design.
+- Create a route in the API `GET /seals/:name_of_seals` to retrieve the information of a single seal.
+- Create the `Info` page in the front-end using the previously created route. The `Info` page should be accessible using the URL scheme `http://localhost:3000/seals/:name_of_the_seal`.
 - [OPTIONAL] Create the character selection system.
 
 You can contact @eskombro or @nicolasvienot if you need anything.
