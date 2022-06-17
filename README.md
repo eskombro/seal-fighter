@@ -55,7 +55,7 @@ What's provided:
 
 What you need to do:
 - Create the `Home` page in the front-end following the design.
-- Create a route in the API `GET /seals/:name_of_seals` to retrieve the information of a single seal.
+- Create a route in the API `GET /seals/:name_of_the_seal` to retrieve the information of a single seal.
 - Create the `Info` page in the front-end using the previously created route. The `Info` page should be accessible using the URL scheme `http://localhost:3000/seals/:name_of_the_seal`.
 - [OPTIONAL] Create the character selection system.
 
