@@ -49,13 +49,14 @@ This is the very early stage of this game development! Someone took some decisio
 What's provided:
 - A basic design that shows what we would like the start of the game to look like. You can find this design in Figma, [click on this link](https://www.figma.com/file/1F1hraYvSAN7vzhd4e5iMU/Seal-Fighter-V?node-id=0%3A1) and check it out.
 - An asset folder with some images and fonts, keep in mind you can access all those in the Figma file too. [Check it here](front/assets).
-- A functional API with a route `GET http://localhost:8888/seals`.
+- A functional API with a route `GET /seals`.
 - A functional front-end application.
 - A basic CI including tests and linter for the api and the front-end.
 
 What you need to do:
 - Create the `Home` page following the design.
-- Create the `Info` page following the design and using an API route in the form of `GET http://localhost:8888/seals/name_of_the_seal`. The `Info` page should be accessible from the front-end using the URL scheme `http://localhost:3000/seals/name_of_the_seal`.
+- Create a route in the API `GET /seals/name_of_seals` to retrieve the information of a single seal
+- Create the `Info` page using the previously create route. The `Info` page should be accessible from the front-end using the URL scheme `http://localhost:3000/seals/name_of_the_seal`.
 - [OPTIONAL] Create the character selection system.
 
 You can contact @eskombro or @nicolasvienot if you need anything.
