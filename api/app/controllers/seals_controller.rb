@@ -7,6 +7,12 @@ class SealsController < ApplicationController
     render json: JSON.parse(Rabl.render(@seals, 'seals/index', view_path: 'app/views', format: :json))
   end
 
+  # GET /seals/1
+  def show
+    @seal = Seal.find_by(name: params[:name_of_the_seal])
+    render json: JSON.parse(Rabl.render(@seal, 'seals/show', view_path: 'app/views', format: :json))
+  end
+
   # POST /seals
   def create
     @seal = Seal.new(seal_params)

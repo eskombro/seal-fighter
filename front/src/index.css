@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Battle Bots";
+  src: local("Battle Bots"),
+   url("./assets/font.otf") format("truetype");
+  font-weight: bold;
+}

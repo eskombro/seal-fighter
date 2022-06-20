@@ -10,6 +10,7 @@ gem 'rails', '~> 6.1.6'
 gem 'rubocop'
 gem 'rubocop-rails', require: false
 gem 'sqlite3', '~> 1.4'
+gem 'rack-cors'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 

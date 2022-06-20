@@ -22,6 +22,12 @@ RSpec.describe Seal, type: :model do
     expect(@seal.name).to be_a(String)
   end
 
+  it 'has a unique name' do
+    expect do
+      Seal.create!(name: 'seal_1')
+    end.to raise_error(ActiveRecord::RecordInvalid)
+  end
+
   it 'has valid hp, attack and defense attributes' do
     expect(@seal.hp).not_to be 0
     expect(@seal.hp).to be_a(Integer)
