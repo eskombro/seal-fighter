@@ -7,10 +7,10 @@ gem 'oj'
 gem 'puma', '~> 5.0'
 gem 'rabl'
 gem 'rails', '~> 6.1.6'
+gem 'rack-cors'
 gem 'rubocop'
 gem 'rubocop-rails', require: false
 gem 'sqlite3', '~> 1.4'
-
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
