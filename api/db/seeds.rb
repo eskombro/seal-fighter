@@ -34,7 +34,7 @@ seals = [
                  'feet cheeseburger melted cheese mascarpone cheeseburger. Cut the cheese cheesy '\
                  'feet hard cheese chalk and cheese gouda cheese slices cheddar st. agur blue cheese. '\
                  'Hard cheese rubber cheese brie smelly cheese.' },
-  { name: 'the_king', hp: 1000, attack: 25, defense: 25, img_url: 'the_king.jpg',
+  { name: 'lil_joe', hp: 1000, attack: 25, defense: 25, img_url: 'lil_joe.jpg',
     description: 'I love cheese, especially cottage cheese emmental. Pepper jack smelly cheese bavarian '\
                  'bergkase bocconcini ricotta blue castello everyone loves stinking bishop. Babybel babybel gouda '\
                  'everyone loves melted cheese swiss jarlsberg bavarian bergkase. Queso feta macaroni cheese '\
